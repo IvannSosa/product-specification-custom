@@ -1,4 +1,5 @@
-import React, { FC, useMemo, ReactNode } from 'react'
+import type { FC, ReactNode } from 'react'
+import React, { useMemo } from 'react'
 import { IOMessageWithMarkers } from 'vtex.native-types'
 import { useCssHandles, applyModifiers } from 'vtex.css-handles'
 
@@ -48,13 +49,13 @@ const ProductSpecificationText: FC<Props> = ({
     }
 
     result.groupName = (
-      <span
+      <h3
         key="groupName"
         data-specification-group={group.originalName}
         className={handles.groupName}
       >
         {group.name}
-      </span>
+      </h3>
     )
 
     if (!specification) {
@@ -62,14 +63,14 @@ const ProductSpecificationText: FC<Props> = ({
     }
 
     result.specificationName = (
-      <span
+      <h3
         key="specificationName"
         data-specification-group={group.originalName}
         data-specification-name={specification.originalName}
         className={handles.specificationName}
       >
         {specification.name}
-      </span>
+      </h3>
     )
 
     if (!value) {

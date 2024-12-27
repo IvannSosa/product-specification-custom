@@ -1,7 +1,7 @@
 {
   "vendor": "maxservice",
   "name": "product-specifications",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Product Specifications",
   "description": "",
   "builders": {

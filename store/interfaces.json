@@ -1,17 +1,17 @@
 {
-  "product-specification-group": {
+  "maxservice-product-specification-group": {
     "component": "ProductSpecificationGroup",
     "composition": "children"
   },
-  "product-specification": {
+  "maxservice-product-specification": {
     "component": "ProductSpecification",
     "composition": "children"
   },
-  "product-specification-values": {
+  "maxservice-product-specification-values": {
     "component": "ProductSpecificationValues",
     "composition": "children"
   },
-  "product-specification-text": {
+  "maxservice-product-specification-text": {
     "component": "ProductSpecificationText",
     "composition": "children"
   }

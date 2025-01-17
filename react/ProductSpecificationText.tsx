@@ -24,6 +24,7 @@ const CSS_HANDLES = [
   'groupName',
   'specificationName',
   'specificationValue',
+  'specificationMessage'
 ] as const
 
 const ProductSpecificationText: FC<Props> = ({
@@ -97,12 +98,14 @@ const ProductSpecificationText: FC<Props> = ({
   }, [group, specification, value, handles])
 
   return (
-    <IOMessageWithMarkers
-      handleBase="specificationText"
-      message={message}
-      markers={markers}
-      values={values}
-    />
+    <h2 className={handles.specificationMessage}>
+      <IOMessageWithMarkers
+        handleBase="specificationText"
+        message={message}
+        markers={markers}
+        values={values}
+      />
+    </h2>
   )
 }
 
